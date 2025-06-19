@@ -1,0 +1,158 @@
+{
+   "LocaleSwitcher": {
+     "label": "Choose your language:",
+     "locale": {
+       "en": "EN",
+       "ru": "RU"
+     }
+   },
+   "Home": {
+     "title": "Welcome to My App",
+     "description": "This is a description of my app."
+   },
+   "Main": {
+     "title-1": "Turning",
+     "title-2": "meetings",
+     "title-3": "into actions",
+     "desc-1": "Automatic transcription,",
+     "desc-2": "task creation,",
+     "desc-3": "AI tips and",
+     "desc-4": "every",
+     "desc-5": "conversation into valuable actions",
+     "desc-6": "smart analytics —",
+     "desc-7": "turn every conversation into valuable actions"
+   },
+   "Button": {
+     "demo": "request demo",
+     "demo-d": "demo",
+     "down": "Download presentation",
+     "up": "Send"
+   },
+   "Header": {
+     "adv": "Features",
+     "how": "How it works",
+     "tell": "Contact",
+     "faq": "FAQ"
+   },
+   "Possibilities": {
+     "FirstDesktop": {
+       "title": "Smart task generation",
+       "desc": "AI identifies key phrases, deadlines, and automatically creates a to-do list that can be sent directly to JIRA, Trello, and other project management systems — greatly simplifying planning and boosting productivity.",
+       "descMobile": "AI creates a to-do list from key phrases and deadlines with export to JIRA, Trello, and other systems."
+     },
+     "SecondDesktop": {
+       "title": "Auto transcription & summary",
+       "desc": "Fast and accurate speech-to-text conversion — preserving meaning and structure. A concise essence in one document: structured text with hyperlinks to key moments. Share results without reviewing the whole recording.",
+       "descMobile": "Can be deployed on corporate infrastructure for full control and security."
+     },
+     "ThirdDesktop": {
+       "title": "Local deployment",
+       "desc": "If necessary, the product can be installed on the company’s infrastructure — for full control, compliance with security, and confidentiality requirements.",
+       "descMobile": "Accurate speech-to-text transcription with structure preservation, automatic extraction of key points with hyperlinks."
+     },
+     "FourDesktop": {
+       "title": "Interactive navigation",
+       "desc": "Jump to the needed moment with one click. The interactive discussion timeline allows you to highlight topics and get summaries for them.",
+       "descMobile": "One-click navigation. Topic timeline with automatic summaries."
+     },
+     "FiveDesktop": {
+       "title": "Flexible integration & automation",
+       "desc": "Jump to the needed moment with one click. The interactive discussion timeline allows you to highlight topics and get summaries for them.",
+       "descMobile": "Supports group calls, JIRA, Google Calendar, and Confluence in a unified system. Automatic meeting analysis and report generation save up to 40% of time."
+     }
+   },
+   "HowWork": {
+     "title-1": "How",
+     "title-2": "AutoBrief works",
+     "HowFirst": {
+       "title": "Call/meeting recording",
+       "desc": "Speech transformation starts from any communication format"
+     },
+     "HowTwo": {
+       "title": "Auto transcription",
+       "desc": "Instant speech-to-text conversion and key phrase extraction"
+     },
+     "HowHowThree3": {
+       "title": "AI-generated summary & meeting analysis",
+       "desc": "Creation of a summary, list of tasks, and ideas from the conversation"
+     },
+     "HowThree": {
+       "title": "Action plan after the meeting",
+       "desc": "AI creates a task list, highlights agreements, and prepares next steps for the team"
+     },
+     "HowFour": {
+       "title": "Sharing with participants",
+       "desc": "Customizable form for sending outcomes and next steps"
+     }
+   },
+   "WhoIs": {
+     "title": "Who it's for",
+     "HowFirst": {
+       "title": "HR teams",
+       "desc": "Conduct interviews faster. Get candidate summaries by key parameters: experience, tech stack, major achievements. Review more candidates in less time."
+     },
+     "HowTwo": {
+       "title": "Analysts and project managers",
+       "desc": "Capture key agreements, track task progress. Use templates for each meeting type and save time on transcription."
+     },
+     "HowThree": {
+       "title": "Sales teams",
+       "desc": "Record promises, deadlines, and next steps. Automatically create client cards with key interaction points."
+     },
+     "HowFour": {
+       "title": "Developers",
+       "desc": "Preserve team knowledge. Store technical discussions, analyze incidents, and build valuable datasets."
+     }
+   },
+   "TalkHour": {
+     "title-1": "An hour of talk — a minute of summary:",
+     "title-2": "see for",
+     "title-3": "yourself!",
+     "desc": "See how easily a call turns into key takeaways and tasks"
+   },
+   "FAQ": {
+     "main":"Request demo version",
+     "main-2":"Leave your contacts",
+     "title": "Still have questions?",
+     "title-2": "Your question or suggestion",
+     "title-3": "yourself!",
+     "title-4":"Company name",
+     "title-5":"Phone number",
+     "desc": "See how easily a call turns into key takeaways and tasks",
+     "label-1": "I consent to the processing of my personal data in accordance with the",
+     "label-2": "Privacy Policy and Personal Data Processing Policy.",
+     "FAQFirst": {
+       "title": "What does our product do?",
+       "desc": "Our product automatically records and analyzes conversations, generating concise summaries, tasks, and key insights using AI."
+     },
+     "FAQTwo": {
+       "title": "Who is our service for?",
+       "desc": "For recruiters, sales managers, team leaders, startups, and anyone who regularly holds business conversations and wants to save time on follow-ups."
+     },
+     "FAQThree": {
+       "title": "What is Smart Summary and how is it different from a regular recording?",
+       "desc": "Smart Summary is a concise, structured output from a conversation with key points, decisions, and tasks. You get the essence without listening to the whole call."
+     },
+     "FAQFour": {
+       "title": "Can the product be integrated with my current tools (CRM, Notion, ATS)?",
+       "desc": "Yes, we offer ready-made integrations with Notion, Trello, HubSpot, Google Calendar, Confluence, and more. An API is also available for custom integrations."
+     },
+     "FAQFive": {
+       "title": "Are we GDPR compliant?",
+       "desc": "Yes, we do not store data without user consent and provide full control over data deletion."
+     }
+   },
+   "Footer": {
+     "title-1": "Turning meetings",
+     "title-2": "into actions",
+     "adv": "Features",
+     "how": "How it works",
+     "tell": "Contact",
+     "faq": "FAQ",
+     "link": "Privacy Policy and Personal Data Processing Policy",
+     "link-1": "Privacy Policy and",
+     "link-2": "Personal Data Processing Policy",
+     "year": "© 2025 AutoBrief. All rights reserved."
+   }
+ }
+ 

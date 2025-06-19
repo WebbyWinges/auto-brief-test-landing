@@ -1,0 +1,21 @@
+{
+  "name": "SellerGPT - нейросеть для продаж в переписке",
+  "short_name": "SellerGPT",
+  "start_url": "https://sellergpt.ru",
+  "display": "standalone",
+  "background_color": "#fafafc",
+  "description": "Нейросеть, которая продает клиентам в переписках",
+  "categories": ["business", "social"],
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "512x512",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "256x256",
+      "type": "image/x-icon"
+    }
+  ]
+}
