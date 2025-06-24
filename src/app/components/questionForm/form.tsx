@@ -79,7 +79,8 @@ export const QuestionForm = React.memo(() => {
         <input
           id="email"
           type="email"
-          className="w-full p-2 border border-[#C1D1F7] rounded-[24px]"
+          className="w-full p-2 border border-[#C1D1F7] rounded-[24px]
+             hover:!border-[#2463EB] focus:!border-[#2463EB] active:!border-[#2463EB] duration-200"
           {...register("email")}
         />
         {errors.email && (
@@ -93,7 +94,7 @@ export const QuestionForm = React.memo(() => {
         </label>
         <textarea
           id="question"
-          className="w-full p-2 border border-[#C1D1F7] rounded-[24px] min-h-[100px]"
+          className="w-full p-2 border border-[#C1D1F7] rounded-[24px] min-h-[100px]  hover:!border-[#2463EB] focus:!border-[#2463EB] active:!border-[#2463EB] duration-200"
           {...register("question")}
         />
         {errors.question && (
@@ -116,7 +117,7 @@ export const QuestionForm = React.memo(() => {
         variant="ordinary"
         type="submit"
         disabled={isSubmitting}
-        className="w-full max-w-[96px] "
+        className="w-full max-w-[144px] "
       >
         {isSubmitting ? "..." : b("up")}
       </Button>

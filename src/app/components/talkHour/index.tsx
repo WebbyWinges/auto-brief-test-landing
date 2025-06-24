@@ -11,7 +11,7 @@ export const TalkHour = () => {
   const { t: b } = useTranslation({ namespace: "Button" });
   return (
     <>
-      <section className=" hidden xl:flex flex-col  gap-[50px] relative min-h-[533px]">
+      <section className=" hidden xl:flex flex-col  gap-[50px] relative min-h-[533px] xl:mx-[20px] ">
         <div className="flex flex-row gap-[46px] items-center relative !z-[10] max-w-[1000px] min-[1340px]:max-w-[1040px] mt-[35px]">
           <SvgIcon />
           <h2 className="text-[32px] xl:text-[48px] font-[400] leading-[120%]">
@@ -60,7 +60,10 @@ export const TalkHour = () => {
         </div>
         <div className="w-full flex justify-end">
           <DemoModal>
-            <Button className="max-w-[197px]" variant="ordinary">
+            <Button
+              className="max-w-[197px] font-[600] leading-[110%]"
+              variant="ordinary"
+            >
               {b("demo")}
             </Button>
           </DemoModal>

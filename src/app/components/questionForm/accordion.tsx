@@ -26,7 +26,7 @@ export const AccordionComponent = <T extends string>({
           className="flex flex-row justify-start items-center w-full"
         >
           <div className="flex flex-col w-full ">
-            <div className="flex flex-row justify-start items-center w-full gap-[20px] py-[16px] ">
+            <div className="flex flex-row justify-start items-center w-full gap-[20px] py-[16px]">
               <motion.div
                 initial={false}
                 animate={{ rotate: isOpen ? 0 : 90 }}
@@ -43,11 +43,14 @@ export const AccordionComponent = <T extends string>({
                 {question}
               </div>
             </div>
-            <span className="w-full bg-[#C4C4C4] h-[1px]" />
-          </div>
+            {!isOpen && <span className="w-full bg-[#C4C4C4] h-[1px]" />}
+          </div>{" "}
         </AccordionTrigger>
-        <AccordionTrigger></AccordionTrigger>
-        <AccordionContent>{answer}</AccordionContent>
+
+        <AccordionContent className="flex flex-col">
+          <span className="pl-[36px] pb-[16px] ">{answer}</span>
+          {isOpen && <span className="w-full bg-[#C4C4C4] h-[1px]" />}
+        </AccordionContent>
       </AccordionItem>
     </Accordion>
   );

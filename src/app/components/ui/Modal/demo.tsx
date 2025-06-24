@@ -110,7 +110,7 @@ export const DemoModal = ({ children }: DemoModalProps) => {
                 </label>
                 <input
                   id="name"
-                  className="w-full p-2 border border-[#C1D1F7] rounded-[24px]"
+                  className="w-full p-2 border border-[#C1D1F7] rounded-[24px]          hover:!border-[#2463EB] focus:!border-[#2463EB] active:!border-[#2463EB] duration-200"
                   {...register("name")}
                 />
                 {errors.name && (
@@ -151,7 +151,7 @@ export const DemoModal = ({ children }: DemoModalProps) => {
                 <input
                   id="email"
                   type="email"
-                  className="w-full p-2 border border-[#C1D1F7] rounded-[24px]"
+                  className="w-full p-2 border border-[#C1D1F7] rounded-[24px]          hover:!border-[#2463EB] focus:!border-[#2463EB] active:!border-[#2463EB] duration-200"
                   {...register("email")}
                 />
                 {errors.email && (
@@ -172,21 +172,21 @@ export const DemoModal = ({ children }: DemoModalProps) => {
                   <span className="text-[#2463EB]">{t("label-2")}</span>
                 </label>
               </div>
-              <div className="flex flex-row items-center w-full justify-between">
+              <div className="flex flex-row items-center w-full gap-[20px] justify-between">
                 <Button
                   variant="ordinary"
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full max-w-[96px] "
+                  className="w-full max-w-[240px] "
                 >
-                  {isSubmitting ? "..." : b("up")}
+                  {isSubmitting ? "..." : b("up-2")}
                 </Button>
                 <Button
                   variant="ordinary"
                   disabled={isSubmitting}
-                  className="w-full max-w-[96px] "
+                  className="w-full max-w-[240px] "
                 >
-                  {isSubmitting ? "..." : b("up")}
+                  {isSubmitting ? "..." : b("up-2")}
                 </Button>
               </div>
             </form>

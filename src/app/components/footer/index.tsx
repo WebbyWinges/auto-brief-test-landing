@@ -11,7 +11,7 @@ export const Footer = () => {
   return (
     <>
       {/* //Desktop */}
-      <footer className="max-[1280px]:hidden flex flex-col  items-center">
+      <footer className="max-[1280px]:hidden flex flex-col mb-[20px] items-center xl:mx-[20px]">
         <div className="flex justify-between w-full bg-[url(/footer/footer.svg)] relative  max-h-[200px] max-w-[1400px]  bg-no-repeat bg-contain">
           <div className="flex flex-col gap-[36px] justify-between pt-[15px] pl-[15px] pb-[40px]">
             <img className="" src={"logo/LogoMobile.svg"} alt="AutoBrief" />

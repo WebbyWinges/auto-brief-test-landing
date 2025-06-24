@@ -53,7 +53,7 @@ export const PhoneInput = ({ register, ...props }: PhoneInputProps) => {
       {...register}
       onChange={handleChange}
       placeholder="+7 ___ ___ __ __"
-      className="w-full p-2 border border-[#C1D1F7] rounded-[24px]"
+      className="w-full p-2 border border-[#C1D1F7] rounded-[24px] hover:!border-[#2463EB] focus:!border-[#2463EB] active:!border-[#2463EB] duration-200"
     />
   );
 };

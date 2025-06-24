@@ -10,7 +10,7 @@ export const Header = () => {
   const { t } = useTranslation({ namespace: "Header" });
 
   return (
-    <header className="flex flex-row justify-between px-[16px] sm:px-[40px] lg:px-[80px] py-[23.5px] bg-[#F5F6FB33]">
+    <header className=" fixed z-40 w-full lg:relative flex flex-row  justify-between backdrop-blur-[20px] bg-[rgba(255,255,255,0.03)]  px-[16px] sm:px-[40px] lg:px-[80px] py-[20px] lg:py-[23.5px] ">
       <img
         className="sm:block hidden"
         src={"logo/LogoHeader.svg"}

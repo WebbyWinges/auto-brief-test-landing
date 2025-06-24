@@ -26,7 +26,8 @@
      "demo": "request demo",
      "demo-d": "demo",
      "down": "Download presentation",
-     "up": "Send"
+     "up": "Send",
+     "up-2":"request"
    },
    "Header": {
      "adv": "Features",

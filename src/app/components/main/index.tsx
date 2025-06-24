@@ -11,7 +11,7 @@ export const Main = () => {
   const { t: b } = useTranslation({ namespace: "Button" });
   return (
     <Card
-      className="px-[16px] sm:px-[50px] pt-[60px] pb-[40px] relative min-h-[780px] sm:min-h-[100%]"
+      className="xl:mx-[20px] px-[16px] sm:px-[50px] pt-[60px] pb-[40px] relative min-h-[780px] sm:min-h-[100%]"
       variant="default"
     >
       <div className="flex flex-row items-center justify-between">
@@ -69,7 +69,7 @@ export const Main = () => {
         src={"/main/3DMobile.svg"}
       />
 
-      <div className=" block sm:hidden absolute right-[35%]  bottom-[5%]">
+      <div className="block sm:hidden absolute left-1/2 bottom-[5%] transform -translate-x-1/2">
         <div className="bg-[#2463EB1A] w-[100px] h-[100px] rounded-full flex justify-center items-center ">
           <div className="bg-[#2463EB66] w-[75px] h-[75px] rounded-full flex justify-center items-center ">
             <a href="#FAQ">
