@@ -2,12 +2,17 @@
 import React, { JSX } from "react";
 import { Card } from "../ui/Card/card";
 
+import HowWorkSVG from "../../../../public/howWork/howWork.svg";
+import TabletSVG from "../../../../public/howWork/Tablet.svg";
+import MobileSVG from "../../../../public/howWork/Mobile.svg";
+
 import { PhoneIcon } from "../../assets/icons/Phone";
 import { Transcription } from "../../assets/icons/Transcription";
 import { AnalysIcon } from "../../assets/icons/Analys";
 import { CalendarIcon } from "../../assets/icons/Calendar";
 import { TelegramIcon } from "../../assets/icons/Telegram";
 import { useTranslation } from "../../lib/hooks/useTranslation";
+import Image from "next/image";
 
 export const HowWork = () => {
   const { t } = useTranslation({ namespace: "HowWork" });
@@ -41,20 +46,23 @@ export const HowWork = () => {
   ];
   return (
     <section className=" flex flex-col items-center xl:flex-row gap-[20px] p-[16px] sm:p-[40px] xl:p-[60px]">
-      <img
-        className="hidden xl:block max-w-[630px] w-full"
-        src={"howWork/HowWork.svg"}
+      <Image
+        priority={true}
+        className="hidden xl:block max-h-[634px]  max-w-[630px] w-full"
+        src={HowWorkSVG}
         alt="AutoBrief"
       />
 
-      <img
+      <Image
+        priority={true}
         className="hidden sm:block xl:hidden max-w-[630px] w-full"
-        src={"howWork/Tablet.svg"}
+        src={TabletSVG}
         alt="AutoBrief"
       />
-      <img
+      <Image
+        priority={true}
         className=" bock  sm:hidden  max-w-[630px] w-full"
-        src={"howWork/Mobile.svg"}
+        src={MobileSVG}
         alt="AutoBrief"
       />
       <div className="flex flex-col gap-[30px] w-full ">
