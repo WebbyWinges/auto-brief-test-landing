@@ -26,10 +26,9 @@ export const Main = () => {
           <p className="  block xl:hidden leading-[120%] text-[18px] sm:text-[20px] xl:text-[24px] text-[#1E344FB2] text-left">
             {t("desc-1")}
             <br className="block sm:hidden" /> {t("desc-2")}
-            <br className="hidden sm:block" /> {t("desc-3")}
-            <br className="block sm:hidden" /> {t("desc-4")}
+            <br className="hidden sm:block" /> {t("desc-3")} {t("desc-6")}
             <br className="block sm:hidden" />
-            {t("desc-5")} <br className="hidden sm:block" /> {t("desc-6")}
+            {t("desc-7")} <br className="hidden sm:block" />
           </p>
           <DemoModal>
             <Button className="max-w-[215px]" variant={"ordinary"}>
@@ -39,8 +38,7 @@ export const Main = () => {
         </div>
         <p className="  hidden xl:block text-[20px] xl:text-[24px] text-[#1E344FB2] text-right pt-[70px]">
           {t("desc-1")} {t("desc-2")}
-          <br /> {t("desc-3")} {t("desc-6")}
-          <br />
+          {t("desc-3")} {t("desc-6")}
           {t("desc-7")}
         </p>
       </div>
