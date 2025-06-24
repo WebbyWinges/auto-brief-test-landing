@@ -65,3 +65,21 @@
    background-color: #f0f0f0;
    font-weight: bold;
 }
+
+@media (max-width:650px){
+   .customSelect {
+   position: relative;
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   max-height: 34px;
+   background-color: #DCE4F9;
+   border: 1px solid var(--gray400);
+   border-radius: 22px;
+   padding: 5.5px 18px;
+   min-height: 34px;
+   transition: all;
+   cursor: pointer;
+   user-select: none;
+}
+}

@@ -62,8 +62,8 @@ const Select: FC<SelectProps> = ({ value, onChange, options, LeftIcon }) => {
     [options, value]
   );
   return (
-    <div className={styles.selectContainer} ref={selectRef}>
-      <div className={styles.customSelect} onClick={toggleDropdown}>
+    <div className={`${styles.selectContainer} `} ref={selectRef}>
+      <div className={`${styles.customSelect}`} onClick={toggleDropdown}>
         <span className={styles.label}>
           {selectedOption?.label || "Select"}
         </span>

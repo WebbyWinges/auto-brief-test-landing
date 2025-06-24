@@ -10,7 +10,7 @@ export const Header = () => {
   const { t } = useTranslation({ namespace: "Header" });
 
   return (
-    <header className=" fixed z-40 w-full lg:relative flex flex-row  justify-between backdrop-blur-[20px] bg-[rgba(255,255,255,0.03)]  px-[16px] sm:px-[40px] lg:px-[80px] py-[20px] lg:py-[23.5px] ">
+    <header className=" fixed z-40 w-full lg:relative flex flex-row  justify-between backdrop-blur-[20px] bg-[rgba(255,255,255,0.03)]  px-[16px] sm:px-[40px] lg:px-[80px] xl:py-[20px] py-[10px] lg:py-[23.5px] ">
       <img
         className="sm:block hidden"
         src={"logo/LogoHeader.svg"}
@@ -47,7 +47,12 @@ export const Header = () => {
       <div className="flex items-center gap-4">
         <LocaleSwitcher />
         <DemoModal>
-          <Button variant="ordinary">{b("demo-d")}</Button>
+          <Button
+            className="max-h-[34px] px-[20px] sm:px-[24px] py-[10px] sm:py-[12px] sm:min-h-[42px] sm:max-h-full"
+            variant="ordinary"
+          >
+            {b("demo-d")}
+          </Button>
         </DemoModal>
       </div>
     </header>
