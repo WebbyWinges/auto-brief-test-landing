@@ -35,10 +35,25 @@
   font-display: swap;
 }
 
-html, body {
+html,
+body {
   font-family: "Nekst", sans-serif;
   scroll-behavior: smooth;
+  color:#1E344F;
 }
+
+h4,
+p,
+span,
+li,
+small,
+blockquote,
+code,
+pre {
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);

@@ -14,7 +14,7 @@ export const TalkHour = () => {
       <section className=" hidden xl:flex flex-col  gap-[50px] relative min-h-[533px] xl:mx-[20px] ">
         <div className="flex flex-row gap-[46px] items-center relative !z-[10] max-w-[1000px] min-[1340px]:max-w-[1040px] mt-[35px]">
           <SvgIcon />
-          <h2 className="text-[32px] xl:text-[48px] font-[400] leading-[120%]">
+          <h2 className="text-[32px] xl:text-[48px] font-[500] leading-[120%]">
             {t("title-1")} <br />{" "}
             <span className="text-[#2463EB]">{t("title-2")} </span>{" "}
             {t("title-3")}
@@ -45,16 +45,16 @@ export const TalkHour = () => {
 
       <section className=" rounded-0 sm:rounded-[32px] flex flex-col gap-[20px] xl:hidden p-[16px] sm:p-[40px]  bg-[#C1D1F7]">
         <div>
-          <h2 className="text-[22px] sm:text-[32px] pb-[20px] xl:text-[48px] font-[400] leading-[120%]">
+          <h2 className="text-[22px] sm:text-[32px] pb-[20px] xl:text-[48px] font-[500] leading-[120%]">
             {t("title-1")} <br />{" "}
             <span className="text-[#2463EB]">{t("title-2")}</span>{" "}
             {t("title-3")}
           </h2>
 
           <div className="flex flex-col gap-[12px] text-[16px] sm:text-[18px]">
-            <p className="text-[#1E344F]">{t("desc")}</p>
+            <p className="text-[#1E344F] font-[500]">{t("desc")}</p>
             <a className="flex flex-row items-center gap-[8px] text-[#2463EB]">
-              {b("demo")} <DownloadedIcon />
+              {b("down")} <DownloadedIcon />
             </a>
           </div>
         </div>

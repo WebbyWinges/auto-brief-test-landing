@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Raleway } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
+const ralewaySans = Raleway({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
@@ -48,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${ralewaySans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>

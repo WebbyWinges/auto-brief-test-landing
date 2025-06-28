@@ -31,9 +31,9 @@ export const AccordionForm = React.memo(() => {
     },
   ];
   return (
-    <section className=" mx-auto px-[16px] sm:px-[40px] lg:px-[60px] py-[60px] sm:py-[80px] lg:py-[120px] flex flex-col lg:flex-row w-full gap-[40px] xl:gap-[128px]">
+    <section className=" mx-auto px-[16px] pt-[80px] sm:px-[40px] lg:px-[60px] py-[60px] sm:py-[80px] lg:py-[120px] flex flex-col lg:flex-row w-full gap-[40px] xl:gap-[128px]">
       <div>
-        <h2 className="text-[48px] font-[400] leading-[120%] mb-6">
+        <h2 className="text-[48px] font-[500] leading-[120%] mb-6">
           {t("title")}
         </h2>
         <QuestionForm />

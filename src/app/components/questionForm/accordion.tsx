@@ -26,7 +26,7 @@ export const AccordionComponent = <T extends string>({
           className="flex flex-row justify-start items-center w-full"
         >
           <div className="flex flex-col w-full ">
-            <div className="flex flex-row justify-start items-center w-full gap-[20px] py-[16px]">
+            <div className="flex flex-row justify-start items-center w-full gap-[20px] py-[16px] cursor-pointer">
               <motion.div
                 initial={false}
                 animate={{ rotate: isOpen ? 0 : 90 }}
@@ -36,7 +36,7 @@ export const AccordionComponent = <T extends string>({
                 {!isOpen ? <PluseIcon /> : <MinusIcon />}
               </motion.div>
               <div
-                className={`text-[18px]  ${
+                className={`text-[18px] font-[500] ${
                   !isOpen ? "text-[#1E344F]" : "text-[#2463EB]"
                 }  `}
               >

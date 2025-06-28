@@ -34,8 +34,8 @@ export const WhoIs = () => {
   ];
 
   return (
-    <section className=" flex flex-col  gap-[50px] p-[16px] sm:p-[40px] xl:p-[60px]">
-      <h2 className="text-[48px] font-[400] leading-[120%]">{t("title")}</h2>
+    <section className=" flex flex-col !mt-[40px] md:mt-0  gap-[50px] p-[16px] sm:p-[40px] xl:p-[60px]">
+      <h2 className="text-[48px] font-[500] leading-[120%]">{t("title")}</h2>
       <div className="grid grid-cols-2 grid-rows-2 gap-[50px]">
         {WhoIsData.map((card, index) => (
           <WhoIsCard

@@ -66,7 +66,7 @@ export const HowWork = () => {
         alt="AutoBrief"
       />
       <div className="flex flex-col gap-[30px] w-full ">
-        <h2 className="text-[48px] font-[400] leading-[120%]">
+        <h2 className="text-[48px] font-[500] leading-[120%]">
           {t("title-1")} <span className="text-[#2463EB]"> {t("title-2")}</span>{" "}
         </h2>
         <div className="flex flex-col gap-[20px]">

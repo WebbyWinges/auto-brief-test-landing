@@ -11,7 +11,7 @@ export const Main = () => {
   const { t: b } = useTranslation({ namespace: "Button" });
   return (
     <Card
-      className="xl:mx-[20px] px-[16px] sm:px-[50px] pt-[60px] pb-[40px] relative min-h-[780px] sm:min-h-[100%]"
+      className="xl:mx-[20px] px-[16px] top-[40px] sm:px-[50px] pt-[60px] pb-[40px] relative min-h-[780px] sm:min-h-[100%]"
       variant="default"
     >
       <div className="flex flex-row items-center justify-between">

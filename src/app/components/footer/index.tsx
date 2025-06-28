@@ -27,13 +27,30 @@ export const Footer = () => {
             </div>
 
             <ul className="text-[18px] flex flex-col gap-[10px] leading-[130%] text-[#1E344F] font-[500]">
-              <li> {t("adv")} </li>
-              <li>{t("how")}</li>
+              <a href="#possibilities">
+                <li className="text-[#1E344F] font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
+                  {" "}
+                  {t("adv")}{" "}
+                </li>
+              </a>
+              <a href="#howWork">
+                <li className="text-[#1E344F] font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
+                  <li>{t("how")}</li>
+                </li>
+              </a>
             </ul>
 
             <ul className="text-[18px] flex flex-col gap-[10px]  leading-[130%] text-[#1E344F] font-[500]">
-              <li>{t("faq")}</li>
-              <li>{t("tell")}</li>
+              <a href="#FAQ">
+                <li className="text-[#1E344F] font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
+                  <li>{t("faq")}</li>
+                </li>
+              </a>
+              <a href="#FAQ">
+                <li className="text-[#1E344F] font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
+                  <li>{t("tell")}</li>
+                </li>
+              </a>
             </ul>
             <ul className="flex flex-col gap-[10px] ">
               <li className="text-[18px]  leading-[130%] text-[#1E344F] font-[500]">
@@ -65,13 +82,30 @@ export const Footer = () => {
           />
           <div className="flex gap-[20px] ">
             <ul className="text-[18px] flex flex-col gap-[10px] leading-[130%] text-[#1E344F] font-[500]">
-              <li>{t("adv")}</li>
-              <li>{t("how")}</li>
+              <a href="#possibilities">
+                <li className="text-[#1E344F] font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
+                  {" "}
+                  {t("adv")}{" "}
+                </li>
+              </a>
+              <a href="#howWork">
+                <li className="text-[#1E344F] font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
+                  <li>{t("how")}</li>
+                </li>
+              </a>
             </ul>
 
             <ul className="text-[18px] flex flex-col gap-[10px]  leading-[130%] text-[#1E344F] font-[500]">
-              <li>{t("faq")}</li>
-              <li>{t("tell")}</li>
+              <a href="#FAQ">
+                <li className="text-[#1E344F] font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
+                  <li>{t("faq")}</li>
+                </li>
+              </a>
+              <a href="#FAQ">
+                <li className="text-[#1E344F] font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
+                  <li>{t("tell")}</li>
+                </li>
+              </a>
             </ul>
             <ul className="flex flex-col gap-[10px] ">
               <li className="text-[18px]  leading-[130%] text-[#1E344F] font-[500]">
@@ -107,13 +141,30 @@ export const Footer = () => {
 
           <div className="flex gap-[20px] w-full justify-between ">
             <ul className="text-[18px] flex flex-col gap-[10px] leading-[130%] text-[#1E344F] font-[500">
-              <li>{t("adv")}</li>
-              <li>{t("how")}</li>
+              <a href="#possibilities">
+                <li className="text-[#1E344F] font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
+                  {" "}
+                  {t("adv")}{" "}
+                </li>
+              </a>
+              <a href="#howWork">
+                <li className="text-[#1E344F] font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
+                  <li>{t("how")}</li>
+                </li>
+              </a>
             </ul>
 
             <ul className="text-[18px] flex flex-col gap-[10px]  leading-[130%] text-[#1E344F] font-[500]">
-              <li>{t("faq")}</li>
-              <li>{t("tell")}</li>
+              <a href="#FAQ">
+                <li className="text-[#1E344F] font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
+                  <li>{t("faq")}</li>
+                </li>
+              </a>
+              <a href="#FAQ">
+                <li className="text-[#1E344F] font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
+                  <li>{t("tell")}</li>
+                </li>
+              </a>
             </ul>
             <ul className="flex flex-col gap-[10px] ">
               <li className="text-[18px]  leading-[130%] text-[#1E344F] font-[500]">
@@ -145,10 +196,27 @@ export const Footer = () => {
           <img src={"logo/LogoHeader.svg"} alt="AutoBrief" />
           <div className="flex gap-[20px] w-full justify-between ">
             <ul className="text-[16px] flex flex-col gap-[10px] leading-[130%] text-[#1E344F] font-[500]">
-              <li>{t("adv")}</li>
-              <li>{t("how")}</li>
-              <li>{t("faq")}</li>
-              <li>{t("tell")}</li>
+              <a href="#possibilities">
+                <li className="text-[#1E344F] font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
+                  {" "}
+                  {t("adv")}{" "}
+                </li>
+              </a>
+              <a href="#howWork">
+                <li className="text-[#1E344F] font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
+                  <li>{t("how")}</li>
+                </li>
+              </a>
+              <a href="#FAQ">
+                <li className="text-[#1E344F] font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
+                  <li>{t("faq")}</li>
+                </li>
+              </a>
+              <a href="#FAQ">
+                <li className="text-[#1E344F] font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
+                  <li>{t("tell")}</li>
+                </li>
+              </a>
             </ul>
 
             <ul className="flex flex-col gap-[10px] ">
