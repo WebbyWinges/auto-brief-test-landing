@@ -5,6 +5,7 @@ import { Button } from "../ui/button";
 import { ArrowBottom } from "../../assets/icons/ArrowBottom";
 import { useTranslation } from "../../lib/hooks/useTranslation";
 import { DemoModal } from "../ui/Modal/demo";
+import { RightIcon } from "../../assets/icons/RightIcon";
 
 export const Main = () => {
   const { t } = useTranslation({ namespace: "Main" });
@@ -30,11 +31,19 @@ export const Main = () => {
             <br className="block sm:hidden" />
             {t("desc-7")} <br className="hidden sm:block" />
           </p>
-          <DemoModal>
-            <Button className="max-w-[215px]" variant={"ordinary"}>
-              {b("demo")}
+          <div className="flex flex-col sm:flex-row gap-[10px] sm:gap-[20px]">
+            <DemoModal>
+              <Button className="max-w-[215px]" variant={"ordinary"}>
+                {b("demo")}
+              </Button>
+            </DemoModal>
+            <Button
+              variant="ordinary-ghost"
+              className="w-full sm:max-w-[168px] max-w-[146px] !pr-[16px]"
+            >
+              {b("up-4")} <RightIcon className="!w-[24px] !h-[24px]" />
             </Button>
-          </DemoModal>
+          </div>
         </div>
         <p className="  hidden xl:block text-[20px] xl:text-[24px] text-[#1E344FB2] text-right pt-[70px]">
           {t("desc-1")} {t("desc-2")}

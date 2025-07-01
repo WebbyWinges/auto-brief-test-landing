@@ -16,9 +16,15 @@ export const Footer = () => {
           <div className="flex flex-col gap-[36px] justify-between pt-[15px] pl-[15px] pb-[40px]">
             <img className="" src={"logo/LogoMobile.svg"} alt="AutoBrief" />
             <div className="flex flex-col gap-[12px]">
-              <PhoneFooterIcon />
-              <TelegramFooterIcon />
-              <MailFooterIcon />
+              <a href="tel:+79956554569">
+                <PhoneFooterIcon />
+              </a>
+              <a href="https://t.me/autobriefteam" target="_blank">
+                <TelegramFooterIcon />
+              </a>
+              <a href="mailto:autobrief@yandex.com?subject=Запрос информации&body=Здравствуйте,...">
+                <MailFooterIcon />
+              </a>
             </div>
           </div>
           <div className="grid grid-cols-4 gap-[20px] max-w-[1200px] py-[30px] pr-[70px] pb-[60px]">
@@ -47,20 +53,25 @@ export const Footer = () => {
                 </li>
               </a>
               <a href="#FAQ">
-                <li className="text-[#1E344F] font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
+                <li className="text-[#1E344F] lining-nums font-[500] hover:text-[#2463EB] duration-300 cursor-pointer">
                   <li>{t("tell")}</li>
                 </li>
               </a>
             </ul>
             <ul className="flex flex-col gap-[10px] ">
-              <li className="text-[18px]  leading-[130%] text-[#1E344F] font-[500]">
-                +7 995 655 4569
+              <li className="text-[18px]  leading-[130%] text-[#1E344F] font-[500] lining-nums">
+                <a href="tel:+79956554569">+7 (995) 655-45-69</a>
               </li>
               <li className="text-[18px]  leading-[130%] text-[#1E344F] font-[500]">
-                autobrief@yandex.com
+                <a href="mailto:autobrief@yandex.com?subject=Запрос информации&body=Здравствуйте,...">
+                  {" "}
+                  autobrief@yandex.com
+                </a>
               </li>
               <li className="text-[16px]  leading-[130%] text-[#7B7B7B] font-[500]">
-                {t("link")}
+                <a target="_blank" href="/files/Politics.pdf">
+                  {t("link")}
+                </a>
               </li>
             </ul>
           </div>
@@ -109,21 +120,32 @@ export const Footer = () => {
             </ul>
             <ul className="flex flex-col gap-[10px] ">
               <li className="text-[18px]  leading-[130%] text-[#1E344F] font-[500]">
-                +7 995 655 4569
+                <a href="tel:+79956554569">+7 (995) 655-45-69</a>
               </li>
               <li className="text-[18px]  leading-[130%] text-[#1E344F] font-[500]">
-                autobrief@yandex.com
+                <a href="mailto:autobrief@yandex.com?subject=Запрос информации&body=Здравствуйте,...">
+                  {" "}
+                  autobrief@yandex.com
+                </a>
               </li>
             </ul>
             <div>
               <div className="flex flex-row items-center gap-[16px]">
-                <PhoneFooterIcon />
-                <TelegramFooterIcon />
-                <MailFooterIcon />
+                <a href="tel:+79956554569">
+                  <PhoneFooterIcon />
+                </a>
+                <a href="https://t.me/autobriefteam" target="_blank">
+                  <TelegramFooterIcon />
+                </a>
+                <a href="mailto:autobrief@yandex.com?subject=Запрос информации&body=Здравствуйте,...">
+                  <MailFooterIcon />
+                </a>
               </div>
               <p className="text-[16px]  leading-[130%] text-[#7B7B7B] font-[500]">
-                {t("link-1")}
-                <br /> {t("link-2")}
+                <a target="_blank" href="/files/Politics.pdf">
+                  {t("link-1")}
+                  <br /> {t("link-2")}
+                </a>
               </p>
             </div>
           </div>
@@ -168,22 +190,34 @@ export const Footer = () => {
             </ul>
             <ul className="flex flex-col gap-[10px] ">
               <li className="text-[18px]  leading-[130%] text-[#1E344F] font-[500]">
-                +7 995 655 4569
+                <a href="tel:+79956554569">+7 (995) 655-45-69</a>
               </li>
               <li className="text-[18px]  leading-[130%] text-[#1E344F] font-[500]">
-                autobrief@yandex.com
+                <a href="mailto:autobrief@yandex.com?subject=Запрос информации&body=Здравствуйте,...">
+                  {" "}
+                  autobrief@yandex.com
+                </a>
               </li>
               <li className="flex flex-row items-center gap-[16px]">
-                <PhoneFooterIcon />
-                <TelegramFooterIcon />
-                <MailFooterIcon />
+                <a href="tel:+79956554569">
+                  <PhoneFooterIcon />
+                </a>
+                <a href="https://t.me/autobriefteam" target="_blank">
+                  <TelegramFooterIcon />
+                </a>
+                <a href="mailto:autobrief@yandex.com?subject=Запрос информации&body=Здравствуйте,...">
+                  <MailFooterIcon />
+                </a>
               </li>
             </ul>
           </div>
         </div>
         <div>
           <p className="text-[16px]  leading-[130%] text-[#7B7B7B] font-[500]">
-            {t("link")}
+            <a target="_blank" href="/files/Politics.pdf">
+              {" "}
+              {t("link")}
+            </a>
           </p>
           <p className="text-[16px]  leading-[130%] text-[#7B7B7B] font-[500]">
             {t("year")}
@@ -221,22 +255,31 @@ export const Footer = () => {
 
             <ul className="flex flex-col gap-[10px] ">
               <li className="text-[16px]  leading-[130%] text-[#1E344F] font-[500]">
-                +7 995 655 4569
+                <a href="tel:+79956554569">+7 (995) 655-45-69</a>
               </li>
               <li className="text-[16px]  leading-[130%] text-[#1E344F] font-[500]">
-                autobrief@yandex.com
+                <a href="mailto:autobrief@yandex.com?subject=Запрос информации&body=Здравствуйте,...">
+                  {" "}
+                  autobrief@yandex.com
+                </a>
               </li>
               <li className="flex flex-row items-center gap-[16px]">
-                <PhoneFooterIcon />
-                <TelegramFooterIcon />
-                <MailFooterIcon />
+                <a href="tel:+79956554569">
+                  <PhoneFooterIcon />
+                </a>
+                <a href="https://t.me/autobriefteam" target="_blank">
+                  <TelegramFooterIcon />
+                </a>
+                <a href="mailto:autobrief@yandex.com?subject=Запрос информации&body=Здравствуйте,...">
+                  <MailFooterIcon />
+                </a>
               </li>
             </ul>
           </div>
         </div>
         <div className="flex flex-col gap-[8px]">
           <p className="text-[14px]  leading-[130%] text-[#7B7B7B] font-[500]">
-            {t("link")}
+            <a href="/files/Politics.docx"> {t("link")}</a>
           </p>
           <p className="text-[14px]  leading-[130%] text-[#7B7B7B] font-[500]">
             {t("year")}

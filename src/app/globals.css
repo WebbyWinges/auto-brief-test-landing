@@ -48,9 +48,14 @@ span,
 li,
 small,
 blockquote,
+button,
 code,
 pre {
   font-family: var(--font-geist-sans), sans-serif;
+}
+
+.lining-nums {
+font-variant-numeric: lining-nums proportional-nums
 }
 
 

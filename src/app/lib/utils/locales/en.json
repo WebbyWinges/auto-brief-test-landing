@@ -27,7 +27,9 @@
      "demo-d": "demo",
      "down": "Download presentation",
      "up": "Send",
-     "up-2":"request"
+     "up-2":"request",
+     "up-3":"presentation",
+     "up-4":"Autobrief"
    },
    "Header": {
      "adv": "Features",

@@ -37,7 +37,11 @@ export const TalkHour = () => {
 
         <div className="flex flex-col gap-[12px] text-[18px] max-w-[320px] absolute right-0 bottom-0">
           <p className="text-[#1E344F]">{t("desc")}</p>
-          <a className="flex flex-row items-center gap-[8px] text-[#2463EB]">
+          <a
+            target="_blank"
+            className="flex flex-row items-center gap-[8px] text-[#2463EB]"
+            href="/files/pres.pdf"
+          >
             {b("down")} <DownloadedIcon />
           </a>
         </div>
@@ -53,7 +57,11 @@ export const TalkHour = () => {
 
           <div className="flex flex-col gap-[12px] text-[16px] sm:text-[18px]">
             <p className="text-[#1E344F] font-[500]">{t("desc")}</p>
-            <a className="flex flex-row items-center gap-[8px] text-[#2463EB]">
+            <a
+              target="_blank"
+              href="/files/pres.pdf"
+              className="flex flex-row items-center gap-[8px] text-[#2463EB]"
+            >
               {b("down")} <DownloadedIcon />
             </a>
           </div>

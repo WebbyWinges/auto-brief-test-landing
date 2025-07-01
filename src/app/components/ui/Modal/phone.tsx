@@ -1,59 +1,80 @@
 "use client";
-import React from "react";
-import { UseFormRegisterReturn } from "react-hook-form";
 
-interface PhoneInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+import React, { useState, useEffect, useRef } from "react";
+import {
+  UseFormRegisterReturn,
+  useWatch,
+  useFormContext,
+} from "react-hook-form";
+
+interface PhoneInputProps
+  extends Omit<React.InputHTMLAttributes<HTMLInputElement>, "onChange"> {
   register?: UseFormRegisterReturn;
+  hasSubmitted: boolean;
 }
 
-export const PhoneInput = ({ register, ...props }: PhoneInputProps) => {
+export const PhoneInput = ({
+  hasSubmitted,
+  register,
+  ...props
+}: PhoneInputProps) => {
+  const [displayValue, setDisplayValue] = useState("");
+
+  const inputRef = useRef<HTMLInputElement | null>(null);
+
   const formatPhone = (value: string) => {
-    if (!value) return "";
+    const numbers = value.replace(/\D/g, "").slice(0, 11);
+    const trimmed = numbers.startsWith("7") ? numbers.slice(1) : numbers;
+    const length = trimmed.length;
 
-    const numbers = value.replace(/\D/g, "");
-    const length = numbers.length;
+    let result = "+7";
+    if (length > 0) result += ` ${trimmed.slice(0, 3)}`;
+    if (length > 3) result += ` ${trimmed.slice(3, 6)}`;
+    if (length > 6) result += ` ${trimmed.slice(6, 8)}`;
+    if (length > 8) result += ` ${trimmed.slice(8, 10)}`;
 
-    if (length === 0) return "";
-    if (length <= 1) return `+7 ${numbers}`;
-    if (length <= 4) return `+7 ${numbers.slice(1, 4)}`;
-    if (length <= 7) return `+7 ${numbers.slice(1, 4)} ${numbers.slice(4, 7)}`;
-    if (length <= 9)
-      return `+7 ${numbers.slice(1, 4)} ${numbers.slice(4, 7)} ${numbers.slice(
-        7,
-        9
-      )}`;
-    return `+7 ${numbers.slice(1, 4)} ${numbers.slice(4, 7)} ${numbers.slice(
-      7,
-      9
-    )} ${numbers.slice(9, 11)}`;
+    return result;
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const formatted = formatPhone(e.target.value);
-    const rawValue = formatted.replace(/\D/g, "");
+    const raw = e.target.value.replace(/\D/g, "").slice(0, 11);
+    const formatted = formatPhone(raw);
 
-    // Обновляем значение для react-hook-form
+    setDisplayValue(formatted);
+
     if (register?.onChange) {
       register.onChange({
         target: {
           name: register.name,
-          value: rawValue,
+          value: raw,
         },
       });
     }
-
-    // Обновляем отображаемое значение
-    e.target.value = formatted;
   };
+
+  // 🔄 Обновление displayValue при reset()
+  useEffect(() => {
+    if (hasSubmitted == true) {
+      const formatted = formatPhone("");
+      setDisplayValue(formatted);
+    }
+  }, [hasSubmitted]);
 
   return (
     <input
       type="tel"
+      inputMode="tel"
+      placeholder="+7 999 999 99 99"
       {...props}
-      {...register}
+      name={register?.name}
+      ref={(el) => {
+        inputRef.current = el;
+        if (register?.ref) register.ref(el);
+      }}
+      onBlur={register?.onBlur}
+      value={displayValue}
       onChange={handleChange}
-      placeholder="+7 ___ ___ __ __"
-      className="w-full p-2 border border-[#C1D1F7] rounded-[24px] hover:!border-[#2463EB] focus:!border-[#2463EB] active:!border-[#2463EB] duration-200"
+      className="w-full p-2 border lining-nums border-[#C1D1F7] rounded-[24px] hover:!border-[#2463EB] focus:!border-[#2463EB] active:!border-[#2463EB] duration-200"
     />
   );
 };

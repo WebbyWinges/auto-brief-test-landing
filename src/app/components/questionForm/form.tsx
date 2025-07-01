@@ -34,14 +34,12 @@ export const QuestionForm = React.memo(() => {
   });
 
   const [checked, setChecked] = useState(false);
+  const [hasSubmitted, setHasSubmitted] = useState(false);
 
   const handleCheckedChange = useCallback(
     (newChecked: boolean | "indeterminate") => {
       if (newChecked === "indeterminate") return;
 
-      if (!newChecked) {
-        toast.error("Вы должны дать согласие на обработку данных");
-      }
       setChecked(newChecked);
     },
     []
@@ -49,21 +47,36 @@ export const QuestionForm = React.memo(() => {
 
   const onSubmit = useCallback(
     async (data: QuestionFormValues) => {
-      try {
-        if (!checked) {
-          toast.error("Пожалуйста, дайте согласие на обработку данных");
-          return;
-        }
+      if (!hasSubmitted && !checked) {
+        toast.error("Пожалуйста, дайте согласие на обработку данных");
+        return;
+      }
 
-        console.log(data);
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-        toast.success("Ваш вопрос успешно отправлен!");
-        reset();
+      try {
+        const response = await fetch("/api/info", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        });
+
+        const result = await response.json();
+
+        if (result.status === "success") {
+          toast.success("Ваш вопрос успешно отправлен!");
+          setHasSubmitted(true);
+          reset();
+        } else {
+          console.error("Ошибка при отправке данных:", result.message);
+          toast.error("Ошибка при отправке данных");
+        }
       } catch (error) {
+        console.error("Произошла ошибка при отправке:", error);
         toast.error("Произошла ошибка при отправке вопроса");
       }
     },
-    [checked, reset]
+    [checked, reset, hasSubmitted]
   );
 
   return (
@@ -109,7 +122,10 @@ export const QuestionForm = React.memo(() => {
           onCheckedChange={handleCheckedChange}
         />
         <label htmlFor="consent" className="text-sm">
-          {t("label-1")} <span className="text-[#2463EB]">{t("label-2")}</span>
+          <a target="_blank" href="/files/Politics.pdf">
+            {t("label-1")}{" "}
+            <span className="text-[#2463EB]">{t("label-2")}</span>
+          </a>
         </label>
       </div>
 

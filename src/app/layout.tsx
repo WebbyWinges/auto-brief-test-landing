@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Raleway } from "next/font/google";
 import "./globals.css";
+import { YandexMetrikaNextJs } from "./lib/scripts/yandexMetrikaNextJs";
 
 const ralewaySans = Raleway({
   variable: "--font-geist-sans",
@@ -50,6 +51,7 @@ export default function RootLayout({
       <body
         className={`${ralewaySans.variable} ${geistMono.variable} antialiased`}
       >
+        <YandexMetrikaNextJs />
         {children}
       </body>
     </html>
